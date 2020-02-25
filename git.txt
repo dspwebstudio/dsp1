@@ -1,2 +1,2 @@
-git remote add origin https://github.com/dspwebstudio/lions1.git
+git remote add origin https://github.com/dspwebstudio/dsp1.git
 git push -u origin master
