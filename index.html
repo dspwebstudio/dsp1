@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>DSP Diseño y Desarrollo Web</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="dist/img/favicon/android-icon-36x36.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="fixed-top">
+            <div class="logo blue-gradient d-flex align-items-center justify-content-center">
+                <a class="navbar-brand" href="#"><img src="/dist/img/logo/dsp-white.png" alt="logo"
+                        class="img-logo" /></a>
+            </div>
+            <nav class="navbar navbar-expand-md bg-navbar">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 px-md-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-md-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-blue-1 my-2 my-sm-0 shadow-lg" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!-- Header -->
+
+        <!-- Content -->
+        <main>
+            <!--Carousel Wrapper-->
+            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+                    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+                    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+                            </video>
+                            <div class="mask rgba-indigo-light"></div>
+                        </div>
+
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">Light mask</h3>
+                                <p>First text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
+                    </div>
+                    <!-- /.First slide -->
+
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+                            </video>
+                            <div class="mask rgba-purple-slight"></div>
+                        </div>
+
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">Super light mask</h3>
+                                <p>Secondary text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
+                    </div>
+                    <!-- /.Second slide -->
+
+                    <!-- Third slide -->
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+                            </video>
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">Strong mask</h3>
+                                <p>Third text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
+                    </div>
+                    <!-- /.Third slide -->
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--Carousel Wrapper-->
+
+            <!--Section: Content-->
+            <section class="dark-grey-text bg-light">
+                <div class="row pr-lg-5">
+                    <div class="col-md-7 mb-4">
+                        <div class="view">
+                            <img src="https://mdbootstrap.com/img/illustrations/graphics(4).png" class="img-fluid"
+                                alt="smaple image" />
+                        </div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center">
+                        <div class="pb-5 px-5">
+                            <h3 class="font-weight-bold mb-4">Diseño y Desarrollo Web</h3>
+
+                            <p class="text-justify">
+                                Lorem ipsum dolor sit amet consectetur adip elit. Maiores
+                                deleniti explicabo voluptatem quisquam nulla asperiores
+                                aspernatur aperiam voluptate et consectetur minima delectus,
+                                fugiat eum soluta blanditiis adipisci, velit dolore magnam.
+                            </p>
+
+                            <button type="button welcome-button" class="btn btn-blue-1 btn-rounded mx-0 mt-3">
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section: Content-->
+
+            <!-- About -->
+            <section class="about">
+                <div class="vacio"></div>
+                <div class="contenedor p-5 d-flex flex-column justify-content-center">
+                    <h2>Sobre Mi</h2>
+                    <hr />
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                        nihil aliquid vitae unde ipsam! Quae neque doloremque, optio
+                        repellat temporibus vero tempora. Mollitia modi nostrum blanditiis
+                        molestias, similique suscipit, dolores vero natus accusantium rerum
+                        quibusdam enim hic perferendis dignissimos ratione? Ut velit cum
+                        deserunt totam, minima obcaecati assumenda veritatis ullam. Est sed
+                        nobis officia debitis repellendus ab magni fuga. Cum iusto dolor
+                        velit maiores mollitia. Ex nesciunt debitis incidunt, ipsa dolorem
+                        eius officiis facere inventore accusantium nulla blanditiis dolorum,
+                        vero sint rerum laudantium deserunt dicta mollitia vitae, quisquam
+                        non harum natus error? Obcaecati magni voluptate minima architecto
+                        nam odio quibusdam!
+                    </p>
+                </div>
+            </section>
+            <!-- About -->
+
+            <!-- Welcome -->
+            <div class="welcome" style="height: 50vh">
+                <div class="flex-center flex-column">
+                    <h1 class="text-hide animated fadeIn mb-4"
+                        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+                        MDBootstrap
+                    </h1>
+                    <p class="animated fadeIn mb-3">
+                        Thank you for using our product. We're glad you're with us.
+                    </p>
+                    <p class="animated fadeIn text-muted">MDB Team</p>
+                </div>
+            </div>
+            <!-- Welcome -->
+        </main>
+        <!-- Content -->
+
+        <!-- Footer -->
+        <footer class="page-footer font-small footer-bg">
+            <!-- Footer Text -->
+            <div class="container-fluid text-center">
+                <!-- Grid row -->
+                <div class="row p-5">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <!-- Content -->
+                        <p class="text-uppercase font-weight-bold">Footer text 1</p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+                            sapiente sint, nulla, nihil repudiandae commodi voluptatibus
+                            corrupti animi sequi aliquid magnam debitis, maxime quam
+                            recusandae harum esse fugiat. Itaque, culpa?
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3" />
+
+                    <!-- FOOTER SOCIAL SECTION -->
+                    <div id="footer-navbar-social" class="social col-md-6">
+                        <ul class="text-decoration-none">
+                            <a href="#">
+                                <i class="fab fa-whatsapp fa-3x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in fa-3x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-skype fa-3x"></i>
+                            </a>
+                        </ul>
+                    </div>
+                    <!-- FOOTER SOCIAL SECTION -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Text -->
+
+            <!-- Copyright -->
+            <div class="footer-bg-copyright text-center py-3">
+                © 2020 Copyright:
+                <a href="#"><img src="/dist/img/logo/dsp-white.png" alt="logo" width="80px" /></a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <!-- LINKS -->
+        <div class="footer-links fixed-bottom bg-dark">
+            <div class="row text-light">
+                <div class="col-3 footer-service">
+                    <p>Servicios</p>
+                </div>
+                <div class="col-3 footer-service">
+                    <p>Portafolio</p>
+                </div>
+                <div class="col-3 footer-service">
+                    <p>Blog</p>
+                </div>
+                <div class="col-3 footer-service">
+                    <p>Contacto</p>
+                </div>
+            </div>
+        </div>
+        <!-- LINKS -->
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>

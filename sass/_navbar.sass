@@ -1,0 +1,54 @@
+// navbar
+.navbar
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+
+
+.nav-link, .navbar-brand, .form-inline
+    color: $navbar-text
+    font-weight: 20px
+    text-align: center
+    &:hover 
+        color: darken($navbar-text,20%)
+.active
+    border-bottom: 2px solid $navbar-text
+.nav-link
+    padding: 10px 20px
+.bg-navbar
+    background-color: $navbar-bg
+button
+    border-radius: 10px !important
+.fa-bars 
+    color: $navbar-text
+    text-align: center
+.btn-outline-navbar-search
+    border: 2px solid $navbar-text
+.btn-blue-1
+    background: $navbar-text
+    color: $navbar-bg
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+    .nav-link
+        background-color: $navbar-text
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+    .navbar-brand img
+        width: 80px
+    .navbar-nav, .nav-link
+        background-color: $navbar-bg
+        color: $navbar-text 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+    .navbar-nav, .nav-link
+        background-color: $navbar-bg
+        color: $navbar-text 
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+    .navbar-nav, .nav-link
+        background-color: $navbar-bg
+        color: $navbar-text 
