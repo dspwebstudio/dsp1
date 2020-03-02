@@ -11,6 +11,10 @@ body {
   background-color: #333333;
 }
 
+.navbar {
+  background-color: #fff;
+}
+
 .img-logo {
   width: 120px;
 }
