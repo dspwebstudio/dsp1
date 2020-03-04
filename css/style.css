@@ -169,6 +169,7 @@ section .contenedor {
   width: 100%;
   height: 40vh;
   background-image: url("../dist/img/carousel/c1.jpg");
+  background-size: cover;
 }
 
 footer {
