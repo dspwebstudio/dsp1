@@ -102,12 +102,11 @@ hr {
 
 section .view {
   width: 100%;
-  height: 40vh;
 }
 
 section .contenedor {
   width: 100%;
-  height: 50vh;
+  height: auto;
 }
 
 @media (min-width: 576px) {
@@ -164,6 +163,12 @@ section .contenedor {
 
 .welcome-button {
   margin: auto;
+}
+
+.about-img-bg {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../dist/img/carousel/c1.jpg");
 }
 
 footer {
