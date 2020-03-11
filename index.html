@@ -26,54 +26,123 @@
         <div class="logo blue-gradient d-flex align-items-center justify-content-center">
             <a class="navbar-brand" href="#"><img src="./dist/img/logo/dsp-white.png" alt="logo" class="img-logo" /></a>
         </div>
-        <nav class="navbar navbar-expand-lg bg-navbar">
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span>
-                    <i class="fas fa-bars"></i>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 px-md-5">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline mt-md-0 d-none">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-                    <button class="btn btn-blue-1 my-2 my-sm-0 shadow-lg" type="submit">
-                        Search
+        <div class="row">
+            <div class="col-md-9 p-0">
+                <nav class="navbar navbar-expand-md bg-navbar">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span>
+                            <i class="fas fa-bars"></i>
+                        </span>
                     </button>
-                </form>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 px-md-5">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Action 1</a>
+                                    <a class="dropdown-item" href="#">Action 2</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline mt-md-0 d-none">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                            <button class="btn btn-blue-1 my-2 my-sm-0 shadow-lg" type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </nav>
             </div>
-        </nav>
+            <div class="col-md-3 navbar-social pt-3 d-flex align-items-center justify-content-center">
+                <div id="footer-navbar-social" class="social">
+                    <ul class="text-decoration-none text-center">
+                        <a href="#">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-skype fa-2x"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- Header -->
 
     <!-- Content -->
     <main>
-        <div class="video">
-            <div class="view">
-                <div class="video">
-                    <video src="https://mdbootstrap.com/img/video/Lines.mp4" autoplay loop class="vide-fluid"></video>
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                            alt="First slide">
+                        <div class="mask rgba-black-light"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Light mask</h3>
+                        <p>First text</p>
+                    </div>
                 </div>
-                <div class="mask flex-center rgba-black-light">
-                    <h1 class=" h1-responsive white-text">Diseño y Desarrollo Web</h1>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                            alt="Second slide">
+                        <div class="mask rgba-black-strong"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Strong mask</h3>
+                        <p>Secondary text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!--Mask color-->
+                    <div class="view">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                            alt="Third slide">
+                        <div class="mask rgba-black-slight"></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Slight mask</h3>
+                        <p>Third text</p>
+                    </div>
                 </div>
             </div>
+            <!--/.Slides-->
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
         </div>
+        <!--/.Carousel Wrapper-->
         <section class="about">
             <div class="d-flex align-items-center justify-content-center">
                 <div class="view">
@@ -150,18 +219,18 @@
     <!-- LINKS -->
     <div class="container">
         <div class="footer-links fixed-bottom">
-            <div class="row text-light">
+            <div class="row">
                 <div class="col-3 footer-service">
-                    <p>Servicios</p>
+                    <a href="#" class="text-white">Servicios</a>
                 </div>
                 <div class="col-3 footer-service">
-                    <p>Portafolio</p>
+                    <a href="#" class="text-white">Portafolio</a>
                 </div>
                 <div class="col-3 footer-service">
-                    <p>Blog</p>
+                    <a href="#" class="text-white">Blog</a>
                 </div>
                 <div class="col-3 footer-service">
-                    <p>Contacto</p>
+                    <a href="#" class="text-white">Contacto</a>
                 </div>
             </div>
         </div>

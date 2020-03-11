@@ -36,7 +36,8 @@ body {
 .nav-link, .form-inline {
   color: #01579b;
   background-color: #fff;
-  font-weight: 20px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -49,7 +50,7 @@ body {
 }
 
 .nav-link {
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .bg-navbar {
@@ -72,6 +73,10 @@ button {
 .btn-blue-1 {
   background: #01579b;
   color: #fff;
+}
+
+.navbar-social {
+  background-color: #01579b;
 }
 
 @media screen and (min-width: 576px) {
@@ -141,7 +146,7 @@ section .contenedor {
   }
 }
 
-.video {
+.carousel, .carousel-inner, .carousel-item {
   width: 100%;
   height: 100vh;
 }
@@ -165,17 +170,10 @@ section .contenedor {
   margin: auto;
 }
 
-.about-img-bg {
-  width: 100%;
-  height: 40vh;
-  background-image: url("../dist/img/carousel/c1.jpg");
-  background-size: cover;
-}
-
 footer {
   background-color: #01579b;
   color: #fff;
-  margin-bottom: 10vh;
+  margin-bottom: 90px;
 }
 
 .footer-bg {
@@ -206,7 +204,7 @@ footer {
 
 .footer-service {
   width: 100%;
-  height: 10vh;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,6 +217,7 @@ footer {
   border-right: 2px solid #fff;
   font-size: 1em;
   z-index: 2;
+  cursor: pointer;
 }
 
 .footer-service:not(:last-child) {
